@@ -1,0 +1,97 @@
+# ================================================
+# .gitignore para MascoteApp - Projeto Python
+# ================================================
+
+# Arquivos de compilação Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.dist-info/
+
+# PyInstaller
+*.manifest
+*.exe
+# Specs do projeto (mantidos no repo)
+!mascote.spec
+!mascote_blackbox.spec
+*.bat
+
+
+# Arquivos de log do mascote
+cycle_log.txt
+*.log
+
+# Ambientes virtuais Python
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários do Windows
+desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.temp
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Outros arquivos Python
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Arquivos de configuração local
+config.local.*
+settings.local.*
+
+# Arquivos sensíveis (se houver)
+secrets/
+credentials/
+*.key
+*.pem
+
+# ================================================
+# Arquivos específicos do MascoteApp
+# ================================================
+
+# Manter apenas os arquivos essenciais no repositório
+# Os executáveis e builds devem ser ignorados
+
+# Comentários:
+# - cycle_log.txt é gerado em runtime
+# - dist/ contém os executáveis compilados
+# - build/ contém arquivos temporários do PyInstaller
+# - *.spec é gerado automaticamente pelo PyInstaller
