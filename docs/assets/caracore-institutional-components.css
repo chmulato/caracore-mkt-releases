@@ -1,0 +1,40 @@
+﻿:root {
+  --cc-i-surface: #f8fafc;
+  --cc-i-border: #dbe5ef;
+  --cc-i-text: #203246;
+  --cc-i-muted: #5d6f82;
+  --cc-i-link: #0a6b85;
+}
+
+/* Apply only when page opts in with cc-i-page to avoid product visual drift */
+body.cc-i-page {
+  color: var(--cc-i-text);
+}
+
+body.cc-i-page .cc-i-topbar {
+  max-width: 980px;
+  margin: 16px auto 0;
+  padding: 10px 14px;
+  border: 1px solid var(--cc-i-border);
+  border-radius: 10px;
+  background: var(--cc-i-surface);
+  font-size: 0.95rem;
+}
+
+body.cc-i-page .cc-i-backlink {
+  color: var(--cc-i-link);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body.cc-i-page .cc-i-backlink:hover {
+  text-decoration: underline;
+}
+
+body.cc-i-page .cc-i-muted {
+  color: var(--cc-i-muted);
+}
+
+body.cc-i-page .cc-i-card {
+  border-radius: 12px;
+}
