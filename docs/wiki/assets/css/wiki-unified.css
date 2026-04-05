@@ -1,0 +1,76 @@
+/* Wiki Unified Overrides - Cara Core Informática
+   Objetivo: uniformizar aparência entre páginas internas,
+   mantendo "wiki.css" como base e deixando CSS de projeto apenas como camada de cor/elementos.
+*/
+
+:root {
+  /* Aliases (alguns CSS antigos usam estas variáveis) */
+  --wiki-primary: var(--primary-color);
+  --wiki-primary-dark: var(--secondary-color);
+}
+
+/* Superfícies (cards/caixas) - respeita tema claro/escuro */
+.feature-card,
+.module-card,
+.flow-step,
+.arch-layer,
+.api-endpoint,
+.setup-card,
+.best-practice-card,
+.project-showcase,
+.learning-path,
+.path-step,
+.tech-curriculum,
+.character-card,
+.step-content,
+.glossary-term,
+.rbac-example,
+.architecture-diagram {
+  background: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Textos secundários em cards */
+.api-description,
+.stat-label {
+  color: var(--muted-text) !important;
+}
+
+/* Code inline em caixas do glossário */
+.glossary-term code,
+.module-card code,
+.code-example {
+  background: var(--code-bg) !important;
+  color: var(--code-text) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+/* Ajuste de sombras: usa a variável do tema */
+.feature-card,
+.module-card,
+.flow-step,
+.arch-layer,
+.api-endpoint,
+.path-step,
+.character-card,
+.step-content,
+.glossary-term,
+.rbac-example,
+.architecture-diagram {
+  box-shadow: var(--box-shadow) !important;
+}
+
+/* Títulos que dependiam de --wiki-primary */
+.feature-header h4,
+.module-header h5,
+.glossary-term h3,
+.glossary-letter {
+  color: var(--primary-color) !important;
+}
+
+/* Pequenos detalhes de separação */
+.tech-topics li {
+  border-bottom-color: var(--border-color) !important;
+}
+

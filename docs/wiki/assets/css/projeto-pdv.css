@@ -1,0 +1,259 @@
+/* Estilos específicos para projeto CaraCore PDV */
+
+/* Flow Diagram */
+.flow-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    background: white;
+    border: 2px solid var(--pdv-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.flow-number {
+    background: var(--pdv-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: bold;
+}
+
+.flow-arrow {
+    font-size: 2rem;
+    color: var(--pdv-color);
+    margin: 0 10px;
+}
+
+/* Architecture Layers */
+.architecture-layers {
+    margin: 20px 0;
+}
+
+.arch-layer {
+    background: white;
+    border-left: 4px solid var(--pdv-color);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arch-layer h5 {
+    color: var(--pdv-color);
+    margin-bottom: 10px;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-header i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.feature-header h4 {
+    margin: 0;
+    color: var(--wiki-primary);
+}
+
+/* Setup Cards */
+.setup-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+}
+
+.setup-card h4 {
+    color: var(--pdv-color);
+    margin-bottom: 15px;
+}
+
+/* API Documentation */
+.api-section {
+    margin-bottom: 30px;
+}
+
+.api-section h4 {
+    color: var(--pdv-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--pdv-color);
+}
+
+.api-endpoint {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.api-method {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-right: 15px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.api-method.get { background: #d4edda; color: #155724; }
+.api-method.post { background: #cce7ff; color: #004085; }
+.api-method.put { background: #fff3cd; color: #856404; }
+.api-method.delete { background: #f8d7da; color: #721c24; }
+
+.api-path {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    margin-right: 15px;
+    color: var(--pdv-color);
+}
+
+.api-description {
+    color: #6c757d;
+    flex: 1;
+}
+
+/* Technology List */
+.tech-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tech-list li:last-child {
+    border-bottom: none;
+}
+
+.tech-list strong {
+    color: var(--pdv-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flow-diagram {
+        flex-direction: column;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    
+    .flow-step {
+        max-width: 100%;
+    }
+    
+    .api-endpoint {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .api-method {
+        margin-bottom: 10px;
+    }
+}
+
+/* ===================================
+   TEMA DARK - CARA CORE PDV
+   =================================== */
+
+[data-theme="dark"] .flow-step {
+    background: #f8f9fa;
+    border-color: #667eea;
+    color: #2c3e50;
+}
+
+[data-theme="dark"] .flow-step h5 {
+    color: #2c3e50;
+}
+
+[data-theme="dark"] .flow-step p {
+    color: #495057;
+}
+
+[data-theme="dark"] .flow-number {
+    background: #667eea;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .flow-arrow {
+    color: #667eea;
+}
+
+[data-theme="dark"] .arch-layer {
+    background: #f8f9fa;
+    border-left-color: #667eea;
+    color: #2c3e50;
+}
+
+[data-theme="dark"] .arch-layer h5 {
+    color: #667eea;
+}
+
+[data-theme="dark"] .feature-card {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+    color: #2c3e50;
+}
+
+[data-theme="dark"] .feature-header h4 {
+    color: #2c3e50;
+}
+
+[data-theme="dark"] .feature-header i {
+    color: #667eea;
+}
+
+[data-theme="dark"] .setup-card h4 {
+    color: #667eea;
+}
+
+[data-theme="dark"] .api-section h4 {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+[data-theme="dark"] .api-path {
+    color: #667eea;
+}
+
+[data-theme="dark"] .tech-list strong {
+    color: #667eea;
+}
