@@ -1,5 +1,5 @@
 # ================================================
-# .gitignore para MascoteApp - Projeto Python
+# .gitignore para Cara Core MKT Releases
 # ================================================
 
 # Arquivos de compilação Python
@@ -13,16 +13,13 @@ dist/
 build/
 *.dist-info/
 
-# PyInstaller
+# Builds e binários locais
 *.manifest
 *.exe
-# Specs do projeto (mantidos no repo)
-!mascote.spec
-!mascote_blackbox.spec
 *.bat
 
 
-# Arquivos de log do mascote
+# Arquivos de log
 cycle_log.txt
 *.log
 
@@ -83,15 +80,6 @@ credentials/
 *.key
 *.pem
 
-# ================================================
-# Arquivos específicos do MascoteApp
-# ================================================
-
-# Manter apenas os arquivos essenciais no repositório
-# Os executáveis e builds devem ser ignorados
-
-# Comentários:
-# - cycle_log.txt é gerado em runtime
-# - dist/ contém os executáveis compilados
-# - build/ contém arquivos temporários do PyInstaller
-# - *.spec é gerado automaticamente pelo PyInstaller
+# Observação:
+# O repositório de releases mantém apenas a loja, a documentação,
+# o wiki e os downloads oficiais do Cara Core MKT.

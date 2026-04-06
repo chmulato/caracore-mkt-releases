@@ -20,7 +20,35 @@ body {
     color: var(--text-primary);
     background: var(--bg-dark);
     min-height: 100vh;
-    padding: 0 20px 40px;
+    padding: 44px 20px 40px;
+}
+
+.top-free-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(63, 185, 80, 0.45);
+    background: linear-gradient(90deg, rgba(63, 185, 80, 0.18), rgba(88, 166, 255, 0.18));
+    backdrop-filter: blur(4px);
+    color: var(--text-primary);
+    font-size: 0.88rem;
+}
+
+.top-free-pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: var(--accent-green);
+    color: #0f1316;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 .wrapper { max-width: 900px; margin: 0 auto; }
@@ -33,6 +61,36 @@ body {
 .breadcrumb a { color: var(--accent-blue); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 .breadcrumb span { color: var(--text-secondary); }
+
+.store-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+}
+
+.store-nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.86rem;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.store-nav a:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.store-nav a.is-active {
+    color: #0f1316;
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    font-weight: 600;
+}
 
 header {
     padding: 48px 0 40px;
@@ -55,6 +113,109 @@ header .subtitle {
     max-width: 640px;
     margin: 0 auto;
     line-height: 1.65;
+}
+
+.cta-vitrine {
+    margin: 28px 0 20px;
+    padding: 28px 30px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.14), rgba(63, 185, 80, 0.1));
+    border: 1px solid rgba(88, 166, 255, 0.45);
+}
+
+.cta-vitrine .cta-kicker {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-blue);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.cta-vitrine h2 {
+    font-size: 1.45rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+}
+
+.cta-vitrine > p {
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-1px);
+}
+
+.cta-btn-primary {
+    background: var(--accent-green);
+    color: #0f1316;
+}
+
+.cta-btn-primary:hover {
+    box-shadow: 0 4px 14px rgba(63, 185, 80, 0.35);
+}
+
+.cta-btn-secondary {
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.cta-btn-secondary:hover {
+    box-shadow: 0 4px 14px rgba(88, 166, 255, 0.28);
+}
+
+.quick-start {
+    margin: 20px 0 40px;
+    padding: 22px 24px;
+    background: rgba(45, 51, 59, 0.65);
+    border: 1px dashed rgba(88, 166, 255, 0.45);
+    border-radius: 10px;
+}
+
+.quick-start h2 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.quick-start ol {
+    margin: 0 0 14px 20px;
+    color: var(--text-secondary);
+}
+
+.quick-start li {
+    margin-bottom: 6px;
+}
+
+.quick-start-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--accent-blue);
+    color: #0f1316;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.quick-start-btn:hover {
+    box-shadow: 0 4px 14px rgba(88, 166, 255, 0.32);
 }
 
 /* Convite: entre em casa — Sala de Notícias + loja */
@@ -149,6 +310,25 @@ header .subtitle {
 
 .methodology .card p strong { color: var(--text-primary); }
 .methodology .card.card-differential { margin-top: 20px; }
+
+.cta-footer {
+    margin-top: 34px;
+    padding: 24px 26px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+}
+
+.cta-footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.cta-footer p {
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+}
 
 .nav-section-title {
     font-size: 0.8rem;
@@ -251,3 +431,42 @@ footer a:hover { text-decoration: underline; }
 .section-card a { color: var(--accent-blue); }
 
 .page-seed-narrow.wrapper { max-width: 640px; }
+
+@media (max-width: 640px) {
+    body {
+        padding-top: 56px;
+    }
+
+    .top-free-banner {
+        font-size: 0.8rem;
+        gap: 8px;
+        padding: 8px 10px;
+    }
+
+    .store-nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-vitrine {
+        padding: 22px 20px;
+    }
+
+    .cta-vitrine h2 {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quick-start {
+        padding: 18px;
+    }
+
+    .quick-start-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
