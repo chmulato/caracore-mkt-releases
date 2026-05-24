@@ -35,3 +35,17 @@ Conteúdos que não pertencem ao escopo da loja do MKT foram removidos deste
 repositório para evitar ambiguidade.
 
 Cara Core Informática · Cara Core MKT
+## Publicacao de versao em Releases
+
+Use o workflow `.github/workflows/publish-mkt-release.yml` para publicar versoes dos scripts MKT no GitHub Releases.
+
+Passos:
+
+1. Suba o ZIP novo em `docs/downloads/`.
+2. Rode o workflow manualmente (`workflow_dispatch`).
+3. Informe:
+   - `tag`: formato `vX.Y.Z` (ex: `v1.0.0`)
+   - `zip_path`: caminho do ZIP no repo
+   - `release_name`: titulo da release
+   - `prerelease`: `true` ou `false`
+4. O workflow valida tag/arquivo, cria a tag e publica a release com o ZIP.
