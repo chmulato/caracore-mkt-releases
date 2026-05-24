@@ -1000,15 +1000,17 @@ header .subtitle {
     border-radius: var(--panel-radius);
     font-size: 0.875rem;
     font-weight: 600;
+    line-height: 1.2;
     text-decoration: none;
     transition: transform 0.15s, box-shadow 0.15s;
+    white-space: nowrap;
 }
 
 .wiki-btn:hover { transform: translateY(-1px); }
 
 .wiki-btn--primary {
     background: var(--accent-blue);
-    color: #0f1316;
+    color: #f7fbff;
 }
 
 .wiki-btn--primary:hover { box-shadow: 0 4px 14px rgba(88, 166, 255, 0.35); }
@@ -1300,6 +1302,13 @@ header .subtitle {
     margin: 6px 0 0;
 }
 
+.wiki-callout .wiki-btn-group {
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .wiki-state-flow {
     margin: 10px 0 20px;
     display: flex;
@@ -1407,6 +1416,10 @@ header .subtitle {
 
     .wiki-callout {
         grid-template-columns: 1fr;
+    }
+
+    .wiki-callout .wiki-btn-group {
+        justify-content: flex-start;
     }
 
     .site-header,
