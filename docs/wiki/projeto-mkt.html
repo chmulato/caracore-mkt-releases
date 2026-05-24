@@ -1,121 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cara Core MKT — Wiki da aplicação | Loja oficial</title>
-  <meta name="description" content="Wiki operacional do Cara Core MKT na loja: visão do produto, fluxo da oficina, stack técnica, governança e artefato ZIP.">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/css/wiki.css">
-  <link rel="stylesheet" href="assets/css/wiki-unified.css">
-  <link rel="icon" href="../assets/images/favicon.ico" type="image/ico">
-  <link rel="stylesheet" href="../assets/caracore-core-typography.css">
-  <link rel="stylesheet" href="../assets/caracore-institutional-components.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Core MKT — Wiki da aplicação | Loja oficial</title>
+    <meta name="description" content="Wiki operacional do Cara Core MKT na loja: visão do produto, fluxo da oficina, stack técnica, governança e artefato ZIP.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/mkt-portal.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark wiki-nav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="bi bi-journal-code"></i> Wiki da loja</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWiki" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarWiki">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-shop"></i> Loja</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-journal-text"></i> Wiki (início)</a></li>
-          <li class="nav-item"><a class="nav-link active" href="projeto-mkt.html" aria-current="page"><i class="bi bi-file-earmark-text"></i> Documentação</a></li>
-          <li class="nav-item"><a class="nav-link" href="../artefato-vitrine-gratuito.html"><i class="bi bi-box-seam"></i> Artefato</a></li>
-          <li class="nav-item"><a class="nav-link" href="../downloads/caracore-mkt-python-source-2026-04-06.zip"><i class="bi bi-download"></i> Download ZIP</a></li>
-          <li class="nav-item"><a class="nav-link" href="../readme.html"><i class="bi bi-file-text"></i> README da loja</a></li>
-          <li class="nav-item"><a class="nav-link" href="../canal-feedback.html"><i class="bi bi-chat-dots"></i> Canal de feedback</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://mkt.caracore.com.br/wiki/index.html"><i class="bi bi-globe2"></i> Wiki Cara Core (completa)</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="wiki-breadcrumb">
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="../index.html">Loja</a></li>
-          <li class="breadcrumb-item"><a href="index.html">Wiki</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Cara Core MKT</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-  <div class="wiki-container">
-    <div class="row">
-      <div class="col-lg-3 col-md-4 mb-4">
-        <div class="wiki-sidebar">
-          <h4><i class="bi bi-list-ul"></i> Nesta loja</h4>
-          <ul class="wiki-menu">
-            <li><a href="index.html"><i class="bi bi-journal-text"></i> Início do wiki</a></li>
-            <li><a href="projeto-mkt.html" class="active"><i class="bi bi-file-earmark-text"></i> Documentação do produto</a></li>
-            <li><a href="../artefato-vitrine-gratuito.html"><i class="bi bi-box-seam"></i> Artefato de vitrine</a></li>
-            <li><a href="../downloads/caracore-mkt-python-source-2026-04-06.zip"><i class="bi bi-download"></i> Download do ZIP</a></li>
-            <li><a href="../readme.html"><i class="bi bi-file-text"></i> README da loja</a></li>
-            <li><a href="../canal-feedback.html"><i class="bi bi-chat-dots"></i> Canal de feedback</a></li>
-            <li><a href="https://mkt.caracore.com.br/wiki/index.html"><i class="bi bi-globe2"></i> Wiki completa — Cara Core</a></li>
-          </ul>
+<body class="wiki-page">
+
+    <nav class="wiki-nav">
+        <a class="wiki-nav-brand" href="index.html">Wiki da loja</a>
+        <div class="wiki-nav-links">
+            <a href="../index.html">Loja</a>
+            <a href="index.html">Wiki</a>
+            <a href="projeto-mkt.html" class="is-active">Documentação</a>
+            <a href="../artefato-vitrine-gratuito.html">Artefato</a>
+            <a href="../downloads/caracore-mkt-python-source-2026-04-06.zip">Download ZIP</a>
+            <a href="../readme.html">README</a>
+            <a href="../canal-feedback.html">Feedback</a>
+            <a href="https://mkt.caracore.com.br/wiki/index.html">Wiki Cara Core ↗</a>
         </div>
-      </div>
-      <div class="col-lg-9 col-md-8">
+    </nav>
+
+    <div class="wiki-breadcrumb">
+        <a href="../index.html">Loja</a>
+        <span> › </span><a href="index.html">Wiki</a>
+        <span> › Cara Core MKT</span>
+    </div>
+
+    <div class="wiki-layout">
+
+        <aside class="wiki-sidebar">
+            <div class="wiki-sidebar-title">Nesta loja</div>
+            <ul class="wiki-menu">
+                <li><a href="index.html">Início do wiki</a></li>
+                <li><a href="projeto-mkt.html" class="is-active">Documentação do produto</a></li>
+                <li><a href="../artefato-vitrine-gratuito.html">Artefato de vitrine</a></li>
+                <li><a href="../downloads/caracore-mkt-python-source-2026-04-06.zip">Download do ZIP</a></li>
+                <li><a href="../readme.html">README da loja</a></li>
+                <li><a href="../canal-feedback.html">Canal de feedback</a></li>
+                <li><a href="https://mkt.caracore.com.br/wiki/index.html">Wiki completa — Cara Core ↗</a></li>
+            </ul>
+        </aside>
+
         <div class="wiki-content">
-          <h1><i class="bi bi-megaphone"></i> Cara Core MKT</h1>
-          <p class="text-muted">Ambiente de aprendizado e gestão operacional — wiki oficial dentro da loja.</p>
-          <div class="card bg-dark border-secondary text-light mb-3">
-            <div class="card-body">
-              <h2 class="h5">Resumo técnico</h2>
-              <p class="mb-0">Python (oficina), HTML/CSS/JS (vitrine/sala), automação de processos e governança operacional auditável.</p>
+
+            <h1>Cara Core MKT</h1>
+            <p class="lead">Ambiente de aprendizado e gestão operacional — wiki oficial dentro da loja.</p>
+
+            <div class="wiki-summary-card">
+                <h2>Resumo técnico</h2>
+                <p>Python (oficina), HTML/CSS/JS (vitrine/sala), automação de processos e governança operacional auditável.</p>
             </div>
-          </div>
 
-          <h2 class="h4 mt-4">1. O que é o produto</h2>
-          <p>O Cara Core MKT centraliza a operação da Sala Cara Core com apoio de scripts Python para iniciar, validar e transportar entregas entre canais, mantendo rastreabilidade e consistência do fluxo.</p>
+            <h2>1. O que é o produto</h2>
+            <p>O Cara Core MKT centraliza a operação da Sala Cara Core com apoio de scripts Python para iniciar, validar e transportar entregas entre canais, mantendo rastreabilidade e consistência do fluxo.</p>
 
-          <h2 class="h4 mt-4">2. Fluxo operacional da oficina</h2>
-          <ol>
-            <li>Iniciar trabalho da operação diária.</li>
-            <li>Validar trabalho executado na sala.</li>
-            <li>Transportar para salas/canais de entrega.</li>
-            <li>Validar entrega em face, gram e retro.</li>
-          </ol>
+            <h2>2. Fluxo operacional da oficina</h2>
+            <ol>
+                <li>Inicialização da operação com checklist e scripts-base.</li>
+                <li>Validação interna com conferência de entregáveis e trilhas críticas.</li>
+                <li>Transporte com rastreio para salas e canais de entrega.</li>
+                <li>Validação externa com checagem final e liberação.</li>
+            </ol>
+            <p class="wiki-flow-caption">Diagrama do fluxo com pontos de controle operacionais:</p>
+            <div class="wiki-flow">
+                <div class="wiki-flow-step">
+                    <div class="wiki-flow-index">01</div>
+                    <h3>Abertura</h3>
+                    <p>Checklist de abertura, scripts-base e alinhamento da sala.</p>
+                </div>
+                <div class="wiki-flow-step">
+                    <div class="wiki-flow-index">02</div>
+                    <h3>Validação interna</h3>
+                    <p>Conferência de entregáveis e trilhas críticas.</p>
+                </div>
+                <div class="wiki-flow-step">
+                    <div class="wiki-flow-index">03</div>
+                    <h3>Transporte</h3>
+                    <p>Despacho controlado para salas e canais definidos.</p>
+                </div>
+                <div class="wiki-flow-step">
+                    <div class="wiki-flow-index">04</div>
+                    <h3>Validação externa</h3>
+                    <p>Checagem final e liberação da entrega.</p>
+                </div>
+            </div>
 
-          <h2 class="h4 mt-4">3. Stack e estrutura</h2>
-          <ul>
-            <li><strong>Oficina Python:</strong> pacote caracore_mkt e scripts de execução.</li>
-            <li><strong>Vitrine da loja:</strong> páginas estáticas em docs.</li>
-            <li><strong>Governança:</strong> política operacional e validação técnica.</li>
-          </ul>
+            <h2>3. Stack e estrutura</h2>
+            <ul>
+                <li><strong>Oficina Python:</strong> pacote <code>caracore_mkt</code> e scripts de execução.</li>
+                <li><strong>Vitrine da loja:</strong> páginas estáticas em <code>docs/</code>.</li>
+                <li><strong>Governança:</strong> política operacional e validação técnica.</li>
+            </ul>
 
-          <h2 class="h4 mt-4">4. Artefato oficial</h2>
-          <p>O artefato de release para vitrine é um pacote ZIP com o código-fonte Python e arquivos essenciais do projeto.</p>
-          <p>
-            <a href="../artefato-vitrine-gratuito.html" class="btn btn-outline-primary btn-sm">Abrir página do artefato</a>
-            <a href="../downloads/caracore-mkt-python-source-2026-04-06.zip" class="btn btn-primary btn-sm">Baixar ZIP do código Python</a>
-          </p>
+            <h2>4. Artefato oficial</h2>
+            <p>O artefato de release para vitrine é um pacote ZIP com o código-fonte Python e arquivos essenciais do projeto.</p>
+            <div class="wiki-btn-group">
+                <a class="wiki-btn wiki-btn--primary" href="../downloads/caracore-mkt-python-source-2026-04-06.zip">Baixar ZIP do código Python</a>
+                <a class="wiki-btn wiki-btn--outline" href="../artefato-vitrine-gratuito.html">Abrir página do artefato</a>
+            </div>
 
-          <h2 class="h4 mt-4">5. Como entender o artefato rapidamente</h2>
-          <ol>
-            <li>Comece pelo resumo em <a href="../artefato-vitrine-gratuito.html">Artefato de vitrine</a>.</li>
-            <li>Baixe o ZIP e verifique as pastas <strong>caracore_mkt/</strong> e <strong>scripts/</strong>.</li>
-            <li>Leia <strong>README.txt</strong> e <strong>requirements.txt</strong> para execução local.</li>
-            <li>Use o <a href="../canal-feedback.html">canal de feedback</a> para dúvidas operacionais.</li>
-          </ol>
+            <h2>5. Como entender o artefato rapidamente</h2>
+            <ol>
+                <li>Comece pelo resumo em <a href="../artefato-vitrine-gratuito.html">Artefato de vitrine</a>.</li>
+                <li>Baixe o ZIP e verifique as pastas <code>caracore_mkt/</code> e <code>scripts/</code>.</li>
+                <li>Leia <code>README.txt</code> e <code>requirements.txt</code> para execução local.</li>
+                <li>Use o <a href="../canal-feedback.html">canal de feedback</a> para dúvidas operacionais.</li>
+            </ol>
 
-          <h2 class="h4 mt-4">6. Navegação na loja</h2>
-          <p>
-            <a href="../index.html" class="btn btn-outline-primary btn-sm">Voltar à loja</a>
-            <a href="../readme.html" class="btn btn-outline-secondary btn-sm">README da loja</a>
-            <a href="../canal-feedback.html" class="btn btn-outline-secondary btn-sm">Canal de feedback</a>
-          </p>
+            <h2>6. Navegação na loja</h2>
+            <p>Trilhas amplas, glossário e ecossistema completo na wiki oficial: <a href="https://mkt.caracore.com.br/wiki/index.html">mkt.caracore.com.br/wiki</a>.</p>
+            <div class="wiki-btn-group">
+                <a class="wiki-btn wiki-btn--outline" href="../index.html">Voltar à loja</a>
+                <a class="wiki-btn wiki-btn--outline" href="../readme.html">README da loja</a>
+                <a class="wiki-btn wiki-btn--outline" href="../canal-feedback.html">Canal de feedback</a>
+            </div>
 
-          <p class="mt-3">Trilhas amplas, glossário e ecossistema completo continuam disponíveis na loja MKT: <a href="https://mkt.caracore.com.br/wiki/index.html">mkt.caracore.com.br/wiki</a>.</p>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/wiki.js"></script>
+
 </body>
 </html>
