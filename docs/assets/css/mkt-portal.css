@@ -10,6 +10,11 @@
     --accent-gold: #d4a853;
     --accent-green: #3fb950;
     --border: #373e47;
+    --layout-max: 960px;
+    --layout-gutter: 24px;
+    --panel-radius: 12px;
+    --panel-padding-x: 28px;
+    --panel-padding-y: 24px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -20,7 +25,7 @@ body {
     color: var(--text-primary);
     background: var(--bg-dark);
     min-height: 100vh;
-    padding: 44px 20px 40px;
+    padding: 44px var(--layout-gutter) 40px;
 }
 
 .top-free-banner {
@@ -51,7 +56,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.wrapper { max-width: 900px; margin: 0 auto; }
+.wrapper { width: min(100%, var(--layout-max)); margin: 0 auto; }
 
 .breadcrumb {
     font-size: 0.85rem;
@@ -117,7 +122,7 @@ header .subtitle {
 
 .cta-vitrine {
     margin: 28px 0 20px;
-    padding: 28px 30px;
+    padding: var(--panel-padding-y) var(--panel-padding-x);
     border-radius: 12px;
     background: linear-gradient(135deg, rgba(88, 166, 255, 0.14), rgba(63, 185, 80, 0.1));
     border: 1px solid rgba(88, 166, 255, 0.45);
@@ -152,7 +157,7 @@ header .subtitle {
 .cta-btn {
     display: inline-block;
     padding: 11px 18px;
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
@@ -183,10 +188,10 @@ header .subtitle {
 
 .quick-start {
     margin: 20px 0 40px;
-    padding: 22px 24px;
+    padding: var(--panel-padding-y) var(--panel-padding-x);
     background: rgba(45, 51, 59, 0.65);
     border: 1px dashed rgba(88, 166, 255, 0.45);
-    border-radius: 10px;
+    border-radius: var(--panel-radius);
 }
 
 .quick-start h2 {
@@ -207,7 +212,7 @@ header .subtitle {
 .quick-start-btn {
     display: inline-block;
     padding: 10px 16px;
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     background: var(--accent-blue);
     color: #0f1316;
     text-decoration: none;
@@ -220,9 +225,9 @@ header .subtitle {
 
 .access-hub {
     margin: 18px 0 40px;
-    padding: 22px 24px;
+    padding: var(--panel-padding-y) var(--panel-padding-x);
     border: 1px solid rgba(212, 168, 83, 0.45);
-    border-radius: 10px;
+    border-radius: var(--panel-radius);
     background: linear-gradient(180deg, rgba(212, 168, 83, 0.08), rgba(37, 42, 48, 0.85));
 }
 
@@ -248,7 +253,7 @@ header .subtitle {
     text-decoration: none;
     background: rgba(26, 29, 33, 0.9);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     padding: 16px;
     transition: border-color 0.15s, transform 0.15s, background 0.15s;
 }
@@ -283,7 +288,7 @@ header .subtitle {
 /* Convite: entre em casa — Sala de Notícias + loja */
 .convite-casa {
     margin: 40px 0 48px;
-    padding: 32px 36px;
+    padding: calc(var(--panel-padding-y) + 8px) calc(var(--panel-padding-x) + 8px);
     background: var(--bg-card);
     border: 1px solid var(--accent-gold);
     border-radius: 12px;
@@ -312,7 +317,7 @@ header .subtitle {
 .convite-btn {
     display: inline-block;
     padding: 14px 28px;
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
@@ -341,7 +346,7 @@ header .subtitle {
     max-width: 100%;
     width: 320px;
     height: auto;
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     margin-bottom: 20px;
     border: 1px solid var(--border);
 }
@@ -351,8 +356,8 @@ header .subtitle {
 .methodology .card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 28px 32px;
+    border-radius: var(--panel-radius);
+    padding: var(--panel-padding-y) var(--panel-padding-x);
 }
 
 .methodology .card h2 {
@@ -375,8 +380,8 @@ header .subtitle {
 
 .cta-footer {
     margin-top: 34px;
-    padding: 24px 26px;
-    border-radius: 10px;
+    padding: var(--panel-padding-y) var(--panel-padding-x);
+    border-radius: var(--panel-radius);
     border: 1px solid var(--border);
     background: var(--bg-card);
 }
@@ -410,7 +415,7 @@ header .subtitle {
 .nav-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     padding: 24px;
     text-decoration: none;
     color: inherit;
@@ -466,8 +471,8 @@ footer a:hover { text-decoration: underline; }
 .channel-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 20px;
+    border-radius: var(--panel-radius);
+    padding: var(--panel-padding-y) var(--panel-padding-x);
     text-decoration: none;
     color: inherit;
     display: block;
@@ -476,7 +481,7 @@ footer a:hover { text-decoration: underline; }
 .channel-card .icon { font-size: 1.5rem; margin-bottom: 8px; }
 .channel-card .title { font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
 .channel-card .desc { font-size: 0.9rem; color: var(--text-secondary); }
-.no-phone, .lgpd { margin: 16px 0; padding: 12px; background: var(--bg-elevated); border-radius: 8px; font-size: 0.9rem; color: var(--text-secondary); }
+.no-phone, .lgpd { margin: 16px 0; padding: 12px; background: var(--bg-elevated); border-radius: var(--panel-radius); font-size: 0.9rem; color: var(--text-secondary); }
 .back { margin-top: 32px; }
 .back a { color: var(--accent-blue); text-decoration: none; }
 .back a:hover { text-decoration: underline; }
@@ -484,8 +489,8 @@ footer a:hover { text-decoration: underline; }
 .section-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 24px 28px;
+    border-radius: var(--panel-radius);
+    padding: var(--panel-padding-y) var(--panel-padding-x);
     margin-bottom: 20px;
 }
 .section-card h2 { font-size: 1.1rem; color: var(--accent-gold); margin-bottom: 12px; }
@@ -556,7 +561,7 @@ footer a:hover { text-decoration: underline; }
 .wiki-layout {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 36px 20px 60px;
+    padding: 36px var(--layout-gutter) 60px;
     display: grid;
     grid-template-columns: 210px 1fr;
     gap: 32px;
@@ -573,7 +578,7 @@ footer a:hover { text-decoration: underline; }
     top: 60px;
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     padding: 18px;
 }
 
@@ -667,7 +672,7 @@ footer a:hover { text-decoration: underline; }
 
 .wiki-alert {
     padding: 13px 16px;
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     font-size: 0.88rem;
     line-height: 1.6;
     margin: 14px 0;
@@ -696,7 +701,7 @@ footer a:hover { text-decoration: underline; }
 .wiki-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     overflow: hidden;
     text-decoration: none;
     color: inherit;
@@ -737,7 +742,7 @@ footer a:hover { text-decoration: underline; }
 .wiki-btn {
     display: inline-block;
     padding: 9px 16px;
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     font-size: 0.875rem;
     font-weight: 600;
     text-decoration: none;
@@ -766,7 +771,7 @@ footer a:hover { text-decoration: underline; }
 .wiki-summary-card {
     background: var(--bg-elevated);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: var(--panel-radius);
     padding: 18px 22px;
     margin-bottom: 24px;
 }
@@ -894,7 +899,7 @@ footer a:hover { text-decoration: underline; }
     min-width: 170px;
     flex: 1 1 170px;
     border: 1px solid rgba(88, 166, 255, 0.35);
-    border-radius: 10px;
+    border-radius: var(--panel-radius);
     background: rgba(56, 139, 253, 0.08);
     padding: 10px 12px;
 }
@@ -1089,7 +1094,7 @@ footer a:hover { text-decoration: underline; }
 .dual-block {
     margin-bottom: 32px;
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: var(--panel-radius);
     overflow: hidden;
 }
 
