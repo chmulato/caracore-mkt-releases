@@ -1,5 +1,5 @@
 /**
- * CaraCore MKT — Delivery (caracore-site/delivery/mkt)
+ * CaraCore MKT - Delivery (caracore-site/delivery/mkt)
  */
 'use strict';
 

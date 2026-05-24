@@ -1,4 +1,4 @@
-/* CaraCore MKT — Portal (padrão delivery como Seed) */
+/* CaraCore MKT - Portal (padrão delivery como Seed) */
 
 :root {
     --bg-dark: #1a1d21;
@@ -316,7 +316,7 @@ header .subtitle {
     letter-spacing: 0.04em;
 }
 
-/* Convite: entre em casa — Sala de Notícias + loja */
+/* Convite: entre em casa - Sala de Notcias + loja */
 .convite-casa {
     margin: 40px 0 48px;
     padding: calc(var(--panel-padding-y) + 8px) calc(var(--panel-padding-x) + 8px);
@@ -495,7 +495,7 @@ footer p { margin-bottom: 8px; }
 footer a { color: var(--accent-blue); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
-/* Páginas internas (feedback, tecnologia, readme) */
+/* Pginas internas (feedback, tecnologia, readme) */
 .intro { margin: 24px 0; color: var(--text-secondary); }
 .intro p { margin-bottom: 12px; }
 .channels { display: grid; gap: 16px; margin: 24px 0; }
@@ -532,7 +532,7 @@ footer a:hover { text-decoration: underline; }
     width: min(100%, 640px);
 }
 
-/* ── Wiki: layout, navegação, sidebar, conteúdo ────────────────────────── */
+/*    Wiki: layout, navegao, sidebar, contedo                            */
 
 .wiki-page { padding: 0; }
 
@@ -691,7 +691,7 @@ footer a:hover { text-decoration: underline; }
     display: grid;
     grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr);
     gap: 18px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .wiki-hero--wide {
@@ -763,16 +763,73 @@ footer a:hover { text-decoration: underline; }
 }
 
 .wiki-section {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
+}
+
+.wiki-section-card {
+    padding: 24px 26px 26px;
+    border: 1px solid var(--border);
+    border-radius: var(--panel-radius);
+    background: linear-gradient(180deg, rgba(37, 42, 48, 0.98), rgba(26, 29, 33, 0.94));
+    box-shadow: 0 18px 36px rgba(8, 10, 12, 0.16);
+}
+
+.wiki-rail {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 0 0 18px;
+}
+
+.wiki-rail-card {
+    padding: 16px 16px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--panel-radius);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.wiki-rail-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+    border-radius: 999px;
+    background: rgba(88, 166, 255, 0.12);
+    color: var(--accent-blue);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.wiki-rail-card strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+    font-size: 0.96rem;
+}
+
+.wiki-rail-card p {
+    margin: 0;
+    font-size: 0.86rem;
+}
+
+.wiki-rail-card.is-active {
+    border-color: rgba(88, 166, 255, 0.4);
+    background: linear-gradient(180deg, rgba(88, 166, 255, 0.08), rgba(255, 255, 255, 0.03));
+}
+
+.wiki-summary-card--hero {
+    margin-bottom: 18px;
 }
 
 .wiki-content h2 {
     font-size: 1.05rem;
     font-weight: 600;
     color: var(--accent-gold);
-    margin: 28px 0 10px;
-    padding-top: 28px;
-    border-top: 1px solid var(--border);
+    margin: 0 0 12px;
+    padding-top: 0;
+    border-top: none;
 }
 
 .wiki-content h2:first-of-type {
@@ -1272,6 +1329,7 @@ footer a:hover { text-decoration: underline; }
     .wiki-layout { grid-template-columns: 1fr; }
     .wiki-sidebar { position: static; }
     .wiki-nav-links { display: none; }
+    .wiki-rail { grid-template-columns: 1fr 1fr; }
     .wiki-flow { grid-template-columns: 1fr; }
     .wiki-arch-grid { grid-template-columns: 1fr; }
     .wiki-highlight-grid { grid-template-columns: 1fr; }
@@ -1302,7 +1360,7 @@ footer a:hover { text-decoration: underline; }
     }
 }
 
-/* ── Dual-view: Leigo vs Técnico ────────────────────────────────────────── */
+/*    Dual-view: Leigo vs Tcnico                                            */
 
 .dual-view {
     margin: 48px 0;

@@ -1,5 +1,5 @@
 /**
- * Cara Core — Status de Evolução (Seed)
+ * Cara Core - Status de Evoluo (Seed)
  * UX/UI Brand: Verde Esmeralda + Cinza Espacial
  */
 :root {
@@ -31,7 +31,7 @@
 .evo-roadmap-title::before { content: ''; width: 8px; height: 8px; background: var(--evo-emerald-500); border-radius: 50%; }
 .evo-roadmap-list { margin: 0; padding-left: 0; list-style: none; }
 .evo-roadmap-list li { position: relative; padding-left: 1rem; margin-bottom: 4px; }
-.evo-roadmap-list li::before { content: '→'; position: absolute; left: 0; color: var(--evo-emerald-600); font-weight: 600; }
+.evo-roadmap-list li::before { content: ''; position: absolute; left: 0; color: var(--evo-emerald-600); font-weight: 600; }
 .evo-roadmap-tag { display: inline-block; margin-left: 6px; padding: 2px 8px; background: rgba(16,185,129,0.15); color: var(--evo-emerald-500); font-size: 0.7rem; border-radius: 4px; }
 .evo-feedback-fab { position: fixed; bottom: 24px; right: 24px; z-index: 9997; }
 .evo-feedback-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: linear-gradient(135deg, var(--evo-emerald-600) 0%, var(--evo-emerald-700) 100%); color: var(--evo-white); font-size: 0.875rem; font-weight: 600; text-decoration: none; border-radius: 9999px; box-shadow: var(--evo-shadow); border: 1px solid rgba(255,255,255,0.12); transition: transform 0.2s ease, box-shadow 0.2s ease; }
