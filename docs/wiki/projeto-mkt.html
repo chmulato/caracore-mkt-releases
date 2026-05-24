@@ -1,1 +1,298 @@
-<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Cara Core MKT — Wiki da aplicação | Loja oficial</title> <meta name="description" content="Wiki operacional do Cara Core MKT na loja: visão do produto, fluxo da oficina, stack técnica, governança e artefato ZIP."> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="../assets/css/mkt-portal.css"> <link rel="icon" href="../assets/img/favicon.ico" type="image/ico"> </head> <body class="wiki-page"> <nav class="wiki-nav"> <a class="wiki-nav-brand" href="index.html">Trilha do produto</a> <div class="wiki-nav-links"> <a href="../index.html">1. Loja</a> <a href="projeto-mkt.html" class="is-active">2. Produto</a> <a href="../artefato-vitrine-gratuito.html">3. Artefato</a> <a href="https://github.com/chmulato/caracore-mkt-releases/releases">4. Download</a> <a href="../canal-feedback.html">5. Feedback</a> </div> </nav> <div class="wiki-breadcrumb"> <a href="../index.html">Loja</a> <span> ← </span><a href="index.html">Wiki</a> <span> ← Cara Core MKT</span> </div> <div class="wiki-layout"> <aside class="wiki-sidebar"> <div class="wiki-sidebar-title">Nesta loja</div> <ul class="wiki-menu"> <li><a href="../index.html">1. Loja</a></li> <li><a href="projeto-mkt.html" class="is-active">2. Produto</a></li> <li><a href="../artefato-vitrine-gratuito.html">3. Artefato</a></li> <li><a href="https://github.com/chmulato/caracore-mkt-releases/releases">4. Download</a></li> <li><a href="../canal-feedback.html">5. Feedback</a></li> </ul> </aside> <div class="wiki-content"> <h1>Cara Core MKT</h1> <p class="lead">Ambiente de aprendizado e gestão operacional — wiki oficial dentro da loja.</p> <div class="wiki-summary-card"> <h2>Resumo técnico</h2> <p>Python (oficina), HTML/CSS/JS (vitrine/sala), automação de processos e governança operacional auditável.</p> </div> <h2>1. O que é o produto</h2> <p>O Cara Core MKT centraliza a operação da Sala Cara Core com apoio de scripts Python para iniciar, validar e transportar entregas entre canais, mantendo rastreabilidade e consistência do fluxo.</p> <p class="wiki-flow-caption">Visão ponta a ponta da operação:</p> <div class="wiki-diagram-lane" role="img" aria-label="Fluxo ponta a ponta da operacao MKT"> <div class="wiki-diagram-node"> <span>Entrada</span> <strong>Demandas da Sala</strong> </div> <div class="wiki-diagram-arrow">→</div> <div class="wiki-diagram-node"> <span>Processo</span> <strong>Oficina Python</strong> </div> <div class="wiki-diagram-arrow">→</div> <div class="wiki-diagram-node"> <span>Controle</span> <strong>Validações</strong> </div> <div class="wiki-diagram-arrow">→</div> <div class="wiki-diagram-node"> <span>Saída</span> <strong>Entrega por canal</strong> </div> </div> <h2>2. Fluxo operacional da oficina</h2> <ol> <li>Inicialização da operação com checklist e scripts-base.</li> <li>Validação interna com conferência de entregáveis e trilhas críticas.</li> <li>Transporte com rastreio para salas e canais de entrega.</li> <li>Validação externa com checagem final e liberação.</li> </ol> <p class="wiki-flow-caption">Diagrama do fluxo com pontos de controle operacionais:</p> <div class="wiki-flow"> <div class="wiki-flow-step"> <div class="wiki-flow-index">01</div> <h3>Abertura</h3> <p>Checklist de abertura, scripts-base e alinhamento da sala.</p> </div> <div class="wiki-flow-step"> <div class="wiki-flow-index">02</div> <h3>Validação interna</h3> <p>Conferência de entregáveis e trilhas críticas.</p> </div> <div class="wiki-flow-step"> <div class="wiki-flow-index">03</div> <h3>Transporte</h3> <p>Despacho controlado para salas e canais definidos.</p> </div> <div class="wiki-flow-step"> <div class="wiki-flow-index">04</div> <h3>Validação externa</h3> <p>Checagem final e liberação da entrega.</p> </div> </div> <h2>3. Stack e estrutura</h2> <ul> <li><strong>Oficina Python:</strong> pacote <code>caracore_mkt</code> e scripts de execução.</li> <li><strong>Vitrine da loja:</strong> páginas estáticas em <code>docs/</code>.</li> <li><strong>Governança:</strong> política operacional e validação técnica.</li> </ul> <p class="wiki-flow-caption">Arquitetura funcional por camadas:</p> <div class="wiki-arch-grid" role="img" aria-label="Arquitetura por camadas da loja e oficina MKT"> <div class="wiki-arch-card"> <h3>Camada 1 — Interface</h3> <p>Loja, wiki e páginas de orientação operacional.</p> </div> <div class="wiki-arch-card"> <h3>Camada 2 — Orquestração</h3> <p>Scripts da oficina para iniciar, validar e transportar.</p> </div> <div class="wiki-arch-card"> <h3>Camada 3 — Dados</h3> <p>Planilha, registros e trilha auditável de operação.</p> </div> <div class="wiki-arch-card"> <h3>Camada 4 — Canais</h3> <p>Face, Gram e Retro com entrega validada.</p> </div> </div> <h2>4. Responsabilidades operacionais</h2> <p>Matriz resumida para delimitar papéis e reduzir ambiguidade na rotina:</p> <div class="wiki-raci-wrap"> <table class="wiki-raci" aria-label="Matriz de responsabilidades operacionais do MKT"> <thead> <tr> <th>Atividade</th> <th>Operador</th> <th>Oficina</th> <th>Portal</th> <th>Suporte</th> </tr> </thead> <tbody> <tr> <td>Iniciar rotina do dia</td> <td>R</td> <td>A</td> <td>C</td> <td>I</td> </tr> <tr> <td>Validar entregáveis</td> <td>R</td> <td>A</td> <td>C</td> <td>I</td> </tr> <tr> <td>Transportar para canais</td> <td>C</td> <td>A/R</td> <td>I</td> <td>I</td> </tr> <tr> <td>Publicar artefato/release</td> <td>I</td> <td>R</td> <td>C</td> <td>A</td> </tr> </tbody> </table> <p class="wiki-raci-legend">R = Responsible, A = Accountable, C = Consulted, I = Informed</p> </div> <h2>5. Artefato oficial</h2> <p>O artefato de release para vitrine é um pacote ZIP com o código-fonte Python e arquivos essenciais do projeto.</p> <p class="wiki-flow-caption">Estados da entrega e pontos de decisão:</p> <div class="wiki-state-flow" role="img" aria-label="Maquina de estados da entrega do artefato MKT"> <span class="wiki-state wiki-state--ok">Iniciado</span> <span class="wiki-state-sep">→</span> <span class="wiki-state wiki-state--ok">Validado interno</span> <span class="wiki-state-sep">→</span> <span class="wiki-state wiki-state--ok">Transportado</span> <span class="wiki-state-sep">→</span> <span class="wiki-state wiki-state--ok">Validado externo</span> <span class="wiki-state-sep">→</span> <span class="wiki-state wiki-state--done">Concluído</span> <span class="wiki-state-sep">|</span> <span class="wiki-state wiki-state--warn">Falha → Retorno para validação</span> </div> <div class="wiki-btn-group"> <a class="wiki-btn wiki-btn--primary" href="https://github.com/chmulato/caracore-mkt-releases/releases">Baixar ZIP do código Python</a> <a class="wiki-btn wiki-btn--outline" href="../artefato-vitrine-gratuito.html">Abrir página do artefato</a> </div> <h2>6. Como entender o artefato rapidamente</h2> <ol> <li>Comece pelo resumo em <a href="../artefato-vitrine-gratuito.html">Artefato de vitrine</a>.</li> <li>Baixe o ZIP e verifique as pastas <code>caracore_mkt/</code> e <code>scripts/</code>.</li> <li>Leia <code>README.txt</code> e <code>requirements.txt</code> para execução local.</li> <li>Use o <a href="../canal-feedback.html">canal de feedback</a> para dúvidas operacionais.</li> </ol> <h2>7. Navegação na loja</h2> <p>Trilhas amplas, glossário e ecossistema completo na wiki oficial: <a href="https://mkt.caracore.com.br/wiki/index.html">mkt.caracore.com.br/wiki</a>.</p> <div class="wiki-btn-group"> <a class="wiki-btn wiki-btn--outline" href="../index.html">Voltar à loja</a> <a class="wiki-btn wiki-btn--outline" href="../readme.html">README da loja</a> <a class="wiki-btn wiki-btn--outline" href="../canal-feedback.html">Canal de feedback</a> </div> </div> </div> </body> </html> 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Core MKT - Wiki da aplicacao | Loja oficial</title>
+    <meta name="description" content="Wiki operacional do Cara Core MKT na loja: visao do produto, fluxo da oficina, stack tecnica, governanca e artefato ZIP.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/mkt-portal.css">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/ico">
+</head>
+<body class="wiki-page">
+    <nav class="wiki-nav">
+        <a class="wiki-nav-brand" href="index.html">Trilha do produto</a>
+        <div class="wiki-nav-links">
+            <a href="../index.html">1. Loja</a>
+            <a href="projeto-mkt.html" class="is-active">2. Produto</a>
+            <a href="../artefato-vitrine-gratuito.html">3. Artefato</a>
+            <a href="https://github.com/chmulato/caracore-mkt-releases/releases">4. Download</a>
+            <a href="../canal-feedback.html">5. Feedback</a>
+        </div>
+    </nav>
+
+    <div class="wiki-breadcrumb">
+        <a href="../index.html">Loja</a>
+        <span> &rsaquo; </span>
+        <a href="index.html">Wiki</a>
+        <span> &rsaquo; Cara Core MKT</span>
+    </div>
+
+    <div class="wiki-layout">
+        <aside class="wiki-sidebar">
+            <div class="wiki-sidebar-title">Nesta loja</div>
+            <ul class="wiki-menu">
+                <li><a href="../index.html">1. Loja</a></li>
+                <li><a href="projeto-mkt.html" class="is-active">2. Produto</a></li>
+                <li><a href="../artefato-vitrine-gratuito.html">3. Artefato</a></li>
+                <li><a href="https://github.com/chmulato/caracore-mkt-releases/releases">4. Download</a></li>
+                <li><a href="../canal-feedback.html">5. Feedback</a></li>
+            </ul>
+        </aside>
+
+        <main class="wiki-content">
+            <section class="wiki-hero">
+                <div class="wiki-hero-copy">
+                    <p class="wiki-eyebrow">Produto operacional</p>
+                    <h1>Cara Core MKT</h1>
+                    <p class="lead">Ambiente de aprendizado e gestao operacional com oficina em Python, validacao de entregas e trilha auditavel do trabalho do dia.</p>
+                    <div class="wiki-btn-group">
+                        <a class="wiki-btn wiki-btn--primary" href="https://github.com/chmulato/caracore-mkt-releases/releases">Baixar artefato</a>
+                        <a class="wiki-btn wiki-btn--outline" href="../artefato-vitrine-gratuito.html">Ver pagina do artefato</a>
+                    </div>
+                </div>
+                <div class="wiki-hero-panel">
+                    <div class="wiki-hero-stat">
+                        <span class="wiki-hero-label">Fluxo</span>
+                        <strong>4 etapas</strong>
+                        <p>Abertura, validacao interna, transporte e validacao externa.</p>
+                    </div>
+                    <div class="wiki-hero-stat">
+                        <span class="wiki-hero-label">Entrega</span>
+                        <strong>ZIP oficial</strong>
+                        <p>Release versionada com checksum e trilha de publicacao.</p>
+                    </div>
+                    <div class="wiki-hero-stat">
+                        <span class="wiki-hero-label">Base tecnica</span>
+                        <strong>Python + HTML/CSS/JS</strong>
+                        <p>Oficina local, loja estatica e governanca orientada por processo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-summary-card wiki-summary-card--spotlight">
+                <h2>Resumo tecnico</h2>
+                <p>O Cara Core MKT conecta a Sala Cara Core, o Portal e a oficina Python para reduzir repeticao, organizar entregas e deixar cada etapa verificavel por quem opera e por quem supervisiona.</p>
+            </section>
+
+            <section class="wiki-section">
+                <h2>1. O que e o produto</h2>
+                <p>O Cara Core MKT centraliza a operacao da Sala Cara Core com apoio de scripts Python para iniciar, validar e transportar entregas entre canais, mantendo rastreabilidade e consistencia do fluxo.</p>
+                <div class="wiki-highlight-grid">
+                    <article class="wiki-highlight-card">
+                        <span class="wiki-highlight-kicker">Entrada</span>
+                        <h3>Demandas e sala</h3>
+                        <p>Recebe o trabalho do dia e organiza a leitura inicial da operacao.</p>
+                    </article>
+                    <article class="wiki-highlight-card">
+                        <span class="wiki-highlight-kicker">Motor</span>
+                        <h3>Oficina Python</h3>
+                        <p>Executa os scripts de apoio, validacao e transporte com regras consistentes.</p>
+                    </article>
+                    <article class="wiki-highlight-card">
+                        <span class="wiki-highlight-kicker">Saida</span>
+                        <h3>Entrega validada</h3>
+                        <p>Despacha para os canais corretos com checkpoints claros e auditaveis.</p>
+                    </article>
+                </div>
+                <p class="wiki-flow-caption">Visao ponta a ponta da operacao:</p>
+                <div class="wiki-diagram-lane" role="img" aria-label="Fluxo ponta a ponta da operacao MKT">
+                    <div class="wiki-diagram-node">
+                        <span>Entrada</span>
+                        <strong>Demandas da Sala</strong>
+                    </div>
+                    <div class="wiki-diagram-arrow">&rarr;</div>
+                    <div class="wiki-diagram-node">
+                        <span>Processo</span>
+                        <strong>Oficina Python</strong>
+                    </div>
+                    <div class="wiki-diagram-arrow">&rarr;</div>
+                    <div class="wiki-diagram-node">
+                        <span>Controle</span>
+                        <strong>Validacoes</strong>
+                    </div>
+                    <div class="wiki-diagram-arrow">&rarr;</div>
+                    <div class="wiki-diagram-node">
+                        <span>Saida</span>
+                        <strong>Entrega por canal</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-section">
+                <h2>2. Fluxo operacional da oficina</h2>
+                <p>O fluxo foi desenhado para ser linear, simples de seguir e facil de auditar, sem profundidade desnecessaria de navegacao ou de execucao.</p>
+                <ol>
+                    <li>Inicializacao da operacao com checklist e scripts-base.</li>
+                    <li>Validacao interna com conferencia de entregaveis e trilhas criticas.</li>
+                    <li>Transporte com rastreio para salas e canais de entrega.</li>
+                    <li>Validacao externa com checagem final e liberacao.</li>
+                </ol>
+                <p class="wiki-flow-caption">Diagrama do fluxo com pontos de controle operacionais:</p>
+                <div class="wiki-flow">
+                    <div class="wiki-flow-step">
+                        <div class="wiki-flow-index">01</div>
+                        <h3>Abertura</h3>
+                        <p>Checklist de abertura, scripts-base e alinhamento da sala.</p>
+                    </div>
+                    <div class="wiki-flow-step">
+                        <div class="wiki-flow-index">02</div>
+                        <h3>Validacao interna</h3>
+                        <p>Conferencia de entregaveis e trilhas criticas.</p>
+                    </div>
+                    <div class="wiki-flow-step">
+                        <div class="wiki-flow-index">03</div>
+                        <h3>Transporte</h3>
+                        <p>Despacho controlado para salas e canais definidos.</p>
+                    </div>
+                    <div class="wiki-flow-step">
+                        <div class="wiki-flow-index">04</div>
+                        <h3>Validacao externa</h3>
+                        <p>Checagem final e liberacao da entrega.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-section">
+                <h2>3. Stack e estrutura</h2>
+                <ul>
+                    <li><strong>Oficina Python:</strong> pacote <code>caracore_mkt</code> e scripts de execucao.</li>
+                    <li><strong>Vitrine da loja:</strong> paginas estaticas em <code>docs/</code>.</li>
+                    <li><strong>Governanca:</strong> politica operacional e validacao tecnica.</li>
+                </ul>
+                <p class="wiki-flow-caption">Arquitetura funcional por camadas:</p>
+                <div class="wiki-arch-grid" role="img" aria-label="Arquitetura por camadas da loja e oficina MKT">
+                    <div class="wiki-arch-card">
+                        <h3>Camada 1 - Interface</h3>
+                        <p>Loja, wiki e paginas de orientacao operacional.</p>
+                    </div>
+                    <div class="wiki-arch-card">
+                        <h3>Camada 2 - Orquestracao</h3>
+                        <p>Scripts da oficina para iniciar, validar e transportar.</p>
+                    </div>
+                    <div class="wiki-arch-card">
+                        <h3>Camada 3 - Dados</h3>
+                        <p>Planilha, registros e trilha auditavel de operacao.</p>
+                    </div>
+                    <div class="wiki-arch-card">
+                        <h3>Camada 4 - Canais</h3>
+                        <p>Face, Gram e Retro com entrega validada.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-section">
+                <h2>4. Responsabilidades operacionais</h2>
+                <p>Matriz resumida para delimitar papeis e reduzir ambiguidade na rotina:</p>
+                <div class="wiki-raci-wrap">
+                    <table class="wiki-raci" aria-label="Matriz de responsabilidades operacionais do MKT">
+                        <thead>
+                            <tr>
+                                <th>Atividade</th>
+                                <th>Operador</th>
+                                <th>Oficina</th>
+                                <th>Portal</th>
+                                <th>Suporte</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Iniciar rotina do dia</td>
+                                <td>R</td>
+                                <td>A</td>
+                                <td>C</td>
+                                <td>I</td>
+                            </tr>
+                            <tr>
+                                <td>Validar entregaveis</td>
+                                <td>R</td>
+                                <td>A</td>
+                                <td>C</td>
+                                <td>I</td>
+                            </tr>
+                            <tr>
+                                <td>Transportar para canais</td>
+                                <td>C</td>
+                                <td>A/R</td>
+                                <td>I</td>
+                                <td>I</td>
+                            </tr>
+                            <tr>
+                                <td>Publicar artefato/release</td>
+                                <td>I</td>
+                                <td>R</td>
+                                <td>C</td>
+                                <td>A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="wiki-raci-legend">R = Responsible, A = Accountable, C = Consulted, I = Informed</p>
+                </div>
+            </section>
+
+            <section class="wiki-section">
+                <h2>5. Artefato oficial</h2>
+                <p>O artefato de release para vitrine e um pacote ZIP com o codigo-fonte Python e os arquivos essenciais do projeto.</p>
+                <p class="wiki-flow-caption">Estados da entrega e pontos de decisao:</p>
+                <div class="wiki-state-flow" role="img" aria-label="Maquina de estados da entrega do artefato MKT">
+                    <span class="wiki-state wiki-state--ok">Iniciado</span>
+                    <span class="wiki-state-sep">&rarr;</span>
+                    <span class="wiki-state wiki-state--ok">Validado interno</span>
+                    <span class="wiki-state-sep">&rarr;</span>
+                    <span class="wiki-state wiki-state--ok">Transportado</span>
+                    <span class="wiki-state-sep">&rarr;</span>
+                    <span class="wiki-state wiki-state--ok">Validado externo</span>
+                    <span class="wiki-state-sep">&rarr;</span>
+                    <span class="wiki-state wiki-state--done">Concluido</span>
+                    <span class="wiki-state-sep">|</span>
+                    <span class="wiki-state wiki-state--warn">Falha - retorno para validacao</span>
+                </div>
+                <div class="wiki-callout">
+                    <div>
+                        <strong>Entrega oficial</strong>
+                        <p>Use o release do GitHub como ponto unico de distribuicao do artefato, checksum e historico de versoes.</p>
+                    </div>
+                    <div class="wiki-btn-group">
+                        <a class="wiki-btn wiki-btn--primary" href="https://github.com/chmulato/caracore-mkt-releases/releases">Baixar ZIP do codigo Python</a>
+                        <a class="wiki-btn wiki-btn--outline" href="../artefato-vitrine-gratuito.html">Abrir pagina do artefato</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-section">
+                <h2>6. Como entender o artefato rapidamente</h2>
+                <div class="wiki-checklist">
+                    <div class="wiki-check-item">
+                        <span>01</span>
+                        <p>Comece pelo resumo em <a href="../artefato-vitrine-gratuito.html">Artefato de vitrine</a>.</p>
+                    </div>
+                    <div class="wiki-check-item">
+                        <span>02</span>
+                        <p>Baixe o ZIP e verifique as pastas <code>caracore_mkt/</code> e <code>scripts/</code>.</p>
+                    </div>
+                    <div class="wiki-check-item">
+                        <span>03</span>
+                        <p>Leia <code>README.txt</code> e <code>requirements.txt</code> para execucao local.</p>
+                    </div>
+                    <div class="wiki-check-item">
+                        <span>04</span>
+                        <p>Use o <a href="../canal-feedback.html">canal de feedback</a> para duvidas operacionais.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wiki-section">
+                <h2>7. Navegacao na loja</h2>
+                <p>Para manter o entendimento linear, siga a trilha superior: Loja, Produto, Artefato, Download e Feedback. A wiki completa continua disponivel em <a href="https://mkt.caracore.com.br/wiki/index.html">mkt.caracore.com.br/wiki</a>.</p>
+                <div class="wiki-btn-group">
+                    <a class="wiki-btn wiki-btn--outline" href="../index.html">Voltar a loja</a>
+                    <a class="wiki-btn wiki-btn--outline" href="../readme.html">README da loja</a>
+                    <a class="wiki-btn wiki-btn--outline" href="../canal-feedback.html">Canal de feedback</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
