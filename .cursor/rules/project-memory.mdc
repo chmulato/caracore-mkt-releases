@@ -1,0 +1,28 @@
+---
+description: Memória da loja Cara Core MKT — caracore-mkt-releases; vitrine mkt.caracore.com.br; Sala Cara Core
+alwaysApply: true
+---
+
+# Memória da Loja — caracore-mkt-releases
+
+## Repositório e papel
+- **caracore-mkt-releases:** loja (vitrine) do **Cara Core MKT** — Sala Cara Core e oficina operacional.
+- **URL:** https://mkt.caracore.com.br/
+- **Publicação:** GitHub Pages a partir de **docs/**.
+- **Oficina:** caracore-mkt (Python)
+
+## Matriz e Sala
+- **Portfólio:** `portfolio.html#caracore-mkt` (breadcrumb e footer já apontam)
+- **Sala:** https://tools.caracore.com.br/sala/
+- **Espelho:** `docs/mirror-delivery.html`
+
+## Mensagem fixa
+- **Vitrine gratuita** — conhecer fluxo operacional; ferramenta interna, sem venda pública.
+- Trilha linear: loja → produto → wiki → artefato → feedback.
+
+## Estrutura (docs/)
+- index · projeto-mkt.html · wiki.html · readme.html · portal-controle.html · canal-feedback.html
+
+## Convenções
+- Footer → `portfolio.html#caracore-mkt`
+- Alinhar com oficina e mirror-delivery ao alterar campanhas ou copy institucional.
