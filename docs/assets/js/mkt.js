@@ -1,5 +1,5 @@
 /**
- * CaraCore MKT - Delivery (caracore-site/delivery/mkt)
+ * Cara Core MKT — Loja mkt.caracore.com.br. Matriz: portfolio.html#caracore-mkt.
  */
 'use strict';
 

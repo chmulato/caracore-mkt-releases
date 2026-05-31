@@ -1,6 +1,6 @@
-Copie aqui a imagem da Sala de Notcias para o convite "Entre em casa":
+Imagem da Sala de Notícias para o convite "Entre em casa" na vitrine MKT.
 
-  Origem: caracore-mkt/docs/assets/img/sala_de_noticias.png
-  Destino: delivery/mkt/assets/img/sala_de_noticias.png
+  Origem canónica: repositório caracore-mkt (docs/assets/img/sala_de_noticias.png)
+  Uso na loja: caracore-mkt-releases/docs/assets/img/sala_de_noticias.png
 
-A fonte cannica da imagem fica no repositrio da loja (caracore-mkt), pasta docs.
+Sala canónica: https://tools.caracore.com.br/sala/
